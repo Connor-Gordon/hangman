@@ -49,7 +49,7 @@ document.getElementById("button").addEventListener("click", displayFN)
 
 
 
-// create another function called guess that...
+// create function counterFN 
 
 
 function counterFN(){
@@ -68,12 +68,7 @@ function counterFN(){
 }
 
 
-
-
-
-
-
-
+// create a function displayFN to push guess to browser
 
 function displayFN(){
 	// for each letter in the currentWord, 
@@ -86,7 +81,10 @@ function displayFN(){
 			// and display the letter to the answers array
 			document.getElementById("wordDisplay").innerHTML = answersArray.join("")
 			document.querySelector("#input").value = ""	
-			document.querySelector('#input').focus
+			document.getElementById("input").focus()
+		} else {
+			document.querySelector("#input").value = ""	
+			document.getElementById("input").focus()
 		}
 	}
 	console.log(answersArray)

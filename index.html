@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
 	<title>Document</title>
 </head>
 <body>
-	
+
+	<div id="hangman">
+		<h2>HANGMAN</h2>
+		<ul>
+			<li>A random word with 3 letters or more will be generated, you are tasked with guessing that word letter by letter.</li>
+			<li>You are only allowed to enter one letter at a time.</li>
+			<li>And you will only be given one more turn than there are letters in your word.</li>
+		</ul>
+		
+		<input type="text" id="letter"/>
+		<input type="button" value="letter"/>
+		<p id="wordDisplay"></p>
+		<p id="counter"></p>
+		<p id="message"></p>
+	</div>
+
+
+	<script src="common-words.js"></script>
+	<script src="main.js"></script>
+
 </body>
 </html>

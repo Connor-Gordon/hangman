@@ -23,6 +23,9 @@ var answer = ""
 var counter = currentWord.length + 3
 // and well create an empty array to store the guesses
 var answersArray = []
+// and create an empty array to push attempted letters to display
+var guessedArray = []
+
 
 console.log(currentWord)
 console.log(counter)
@@ -73,16 +76,22 @@ function counterFN(){
 function displayFN(){
 	// for each letter in the currentWord, 
 	var letter = document.getElementById("input").value
+	guessedArray.push(letter)	
+	document.getElementById('alreadyGuessed').innerHTML = guessedArray
 	for (var i = 0; i < currentWord.length; i++){
 		// if the word contains a letter that matches whats typed in then...
 		if (currentWord[i] === letter){
 			// put that letter into the answersArray in place of the underscore
 			answersArray[i] = letter
 			// and display the letter to the answers array
+			
+			
+				
 			document.getElementById("wordDisplay").innerHTML = answersArray.join("")
 			document.querySelector("#input").value = ""	
-			document.getElementById("input").focus()
+			document.getElementById("input").focus()	
 		} else {
+			
 			document.querySelector("#input").value = ""	
 			document.getElementById("input").focus()
 		}
@@ -98,7 +107,7 @@ function displayFN(){
 } 
 
 
-
+// create a function guesses that displays guessed letters to #alreadyGuessed
 
 
 

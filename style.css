@@ -1,20 +1,44 @@
+
+body {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("https://bw-1651cf0d2f737d7adeab84d339dbabd3-gallery.s3.amazonaws.com/images/image_1118381/file_1118381.jpg");
+}
+
+
+#hangman {
+	margin: auto;
+}
+
+#box {
+	background-color: rgba(69, 92, 69, 0.80);
+	width: 600px;
+	margin: auto;
+	color: white;
+}
+
+h2 {
+	width: 280px;
+	margin: auto;
+	background-color: #D02D35;
+	font-size: 50px;
+	border-radius: 25%;
+}
+
 #wordDisplay {
 	width: 200px;
 	height: 50px;
 	background-color: gray;
 	font-size: 30px;
+	border-radius: 15px;
 }
 
 #counter {
 	width: 200px;
 	height: 50px;
+	margin-top: 50px;
 	background-color: blue;
-}
-
-#message {
-	width: 200px;
-	height: 50px;
-	background-color: red;
+	border-radius: 15px;
 }
 
 p {
@@ -22,6 +46,22 @@ p {
 	font-size: 20px;
 }
 
+#alreadyGuessed {
+	width: 200px;
+	height: 50px;
+	background-color: brown;
+	border-radius: 15px;
+}
+
 #input {
 	width: 50px;
+}
+
+ul {
+	list-style: none;
+	margin-left: -15px;
+}
+
+#guess, #guessedLabel {
+	margin-top: 50px;
 }

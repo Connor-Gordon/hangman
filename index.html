@@ -9,16 +9,21 @@
 
 	<div id="hangman">
 		<h2>HANGMAN</h2>
-		<ul>
-			<li>A random word with 3 letters or more will be generated, you are tasked with guessing that word letter by letter.</li>
-			<li>You are only allowed to enter one letter at a time.</li>
-			<li>And you will only be given three more turns than there are letters in your word.</li>
-		</ul>
-		
-		<input type="text" id="input" maxlength="1"/>
-		<input type="button" value="input" id="button"/>
-		<p id="wordDisplay"></p>
-		<p id="counter"></p>
+		<div id="box">
+			<ul>
+				<li>A random word with 3 letters or more will be generated, you are tasked with guessing that word letter by letter.</li>
+				<li>You are only allowed to enter one letter at a time.</li>
+				<li>And you will only be given three more turns than there are letters in your word.</li>
+			</ul>
+			<label>Enter guess here:</label></br>
+			<input type="text" id="input" maxlength="1"/></br>
+			<input type="button" value="input" id="button"/></br>
+			<p id="guess">Guess this word:</p>
+			<p id="wordDisplay"></p>
+			<p id="guessedLabel">Already guessed letters:</p>
+			<p id="alreadyGuessed"></p>
+			<p id="counter"></p>
+		</div>
 	</div>
 
 
